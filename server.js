@@ -23,7 +23,11 @@ http.createServer((req,res) =>{
             else if(path_first === "images"){
                 serveStaticFile(res,path,"images/" + path.substring(path.indexOf(".")+1))
             }
-            else serveStaticFile(res,"404.html","text/html") ;break;
+            else {serveStaticFile(res,"/404.html","text/html") 
+        }
+            
+            ;break;
+
     }
 
 
