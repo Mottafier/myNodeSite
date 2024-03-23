@@ -1,0 +1,12 @@
+<root>
+    <item>
+        <title>Pirate Knight Comic</title>
+        <price>12.00</price>
+        <image>the_pirate_knight.png</image>
+    </item>
+    <item>
+        <title>Pirate Knight Game</title>
+        <price>22.00</price>
+        <image>PK_color.JPEG</image>
+    </item>
+</root>
