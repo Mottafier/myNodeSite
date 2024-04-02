@@ -1,0 +1,30 @@
+  
+    <ul class="navbar">
+        <li><a href="index.html" class="tab">Home</a></li>
+        <li><a href="shop.html" class="tab">Shop</a></li>
+        <li><a href="index.html" class="logo"><img src="pk_logo_transparent.png" width="60" height="70" alt="The Pirate Knight Logo"></a></li>
+        <li><a href="about.html" class="tab">About</a></li>
+        <li><a href="contact.html" class="tab">Contact</a></li>
+    </ul>
+
+    <h1 class="text-border" id="main-heading">Contact</h1>
+
+    <!-- Text input box -->
+    <label for="message_input" class="text_input">Message:</label>
+    <br>
+    <textarea id="message_input" class="text_input" name="freeform" rows="4" cols="50" maxlength="210"></textarea>
+    <br>
+    <button class="text_input" id="send_mail_button">Send!</button>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        // Check if jQuery is loaded from CDN, if not, load it from local
+        if (typeof jQuery == 'undefined') {
+            document.write('<script src="jquery-3.7.1.min.js"><\/script>');
+        }
+    </script>
+
+    <script type="module" src="contact.js"></script>
+
+    

@@ -1,5 +1,15 @@
 {
   "dependencies": {
-    "express": "^4.19.2"
-  }
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "myclientsite",
+  "description": "",
+  "version": "1.0.0",
+  "main": "handlebarsServer.js",
+  "author": "David Motta",
+  "license": "ISC"
 }
