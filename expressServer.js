@@ -8,8 +8,8 @@ const port = 1177;
 var path = __dirname + "/public/"
 
 app.use(express.static(path + 'images'));
-app.use(express.static(path + 'public/css'));
-app.use(express.static(path + 'public/js'));
+app.use(express.static(path + 'css'));
+app.use(express.static(path + 'js'));
 
 app.get(['/','/index.html'],(req,res)=>{
     res.sendFile(path+'index.html');
