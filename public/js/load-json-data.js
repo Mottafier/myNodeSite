@@ -8,7 +8,7 @@ function StoreItem(name,price,image){
         var new_card = $('<div class="card">')
         
         new_card.hide().fadeIn()
-        new_card.append('<img src="images/' + this.image + '" height="100">');
+        new_card.append('<img src="' + this.image + '" height="100">');
         new_card.append('<h3>' + this.name + '</h3><hr />');
         new_card.append('<p>' + this.price + '</p>');
 
@@ -19,7 +19,7 @@ function StoreItem(name,price,image){
 function loadJSONFile() {
     var xhr = new XMLHttpRequest();
 
-    xhr.open('GET', "js/data-shop.json", true);
+    xhr.open('GET', "data-shop.json", true);
 
     xhr.onload = function() {
         if (xhr.status >= 200 && xhr.status < 300) {

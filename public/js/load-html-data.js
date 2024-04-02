@@ -15,5 +15,5 @@ function loadHTMLFile(filePath) {
 }
 
 $("#test_shop").on("click",function(){
-    loadHTMLFile("js/data-shop.html")
+    loadHTMLFile("data-shop.html")
 })
