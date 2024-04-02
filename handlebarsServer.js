@@ -8,22 +8,25 @@ app.set('view engine','handlebars')
 
 const port = 1177;
 
-var path = __dirname + "/public/"
+var path = __dirname + "/public"
 
-app.use(express(__dirname + '/public'));
-app.use(express.static('public'));
+//app.use(express('public'));
+app.use(express(path));
+app.use(express.static(path + "/images"));
+app.use(express.static(path + "/css"));
+app.use(express.static(path + "/js"));
 
 app.get(['/','/index'],(req,res)=>{
     res.render('index');
 });
 app.get('/shop',(req,res)=>{
-    res.sendFile('shop');
+    res.render('shop');
 });
 app.get('/contact',(req,res)=>{
-    res.sendFile('contact');
+    res.render('contact');
 });
 app.get('/about',(req,res)=>{
-    res.sendFile('about');
+    res.render('about');
 });
 app.use((req,res)=>{
     res.status(404)
@@ -32,7 +35,7 @@ app.use((req,res)=>{
 app.use((err,req,res,next)=>{
     console.error(err.stack)
     res.status(500)
-    res.render('404');
+    res.render('500');
 });
 
 app.listen(port,()=>{
